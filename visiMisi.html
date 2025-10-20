@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visi Misi</title>
+    <link rel="stylesheet" href="visiMisi.css">
+    <link rel="icon" type="image/x-icon" href="img/logo sman 3.png">
+</head>
+
+<body>
+    <!-- Bagian Header -->
+    <header>
+        <a href="index.html"><img src="img/Logo SMAN 3 No BG luar.png" alt="Logo Sekolah"></a>
+        <div class="identitas">
+            <h1>SMAN 3 Bandung</h1>
+        </div>
+        <!-- Bagian Navigasi -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li>
+                    <a href="#">Profil</a>
+                    <ul>
+                        <li><a href="sejarah.html">Sejarah Sekolah</a></li>
+                        <li><a href="visiMisi.html">Visi & Misi</a></li>
+                        <li><a href="guru.html">Guru & Staff</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="berita.html">Berita</a>
+                </li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>SMAN 3 Bandung</h1>
+    <section>
+        <h2>VISI</h2>
+        <p>“Terwujudnya Sekolah Berbasis Riset Terdepan Dalam Pembentukan Karakter, Berwawasan Lingkungan Unggul dalam Imtak dan
+        Iptek.”</p>
+    </section>
+    <section>
+        <h2>MISI</h2>
+        <ol>
+            <li>Membangun SDM yang kompetitif sesuai dengan penyelenggaraan Pendidikan Abad-21 dan berintegritas tinggi.</li>
+            <li>Mengembangkan program sekolah berbasis riset dan berliterasi tinggi.</li>
+            <li>Menjadikan lulusan sebagai calon pemimpin masa depan yang mampu menghadapi tantangan global.</li>
+            <li>Mengembangkan potensi kecerdasan intelektual, emosional,dan spiritual bagi seluruh warga sekolah.</li>
+            <li>Menjalin kemitraan berwawasan lingkungan secara global dengan memberikan pelayanan prima serta membangun komunikasi yang harmonis.</li>
+        </ol>
+    </section>
+    <div class="kebijakan">
+        <section>
+            <h2>Kebijakan Mutu</h2>
+            <ol>
+                <li>Meningkatkan Mutu Tenaga Pendidik dan Kependidikan.</li>
+                <li>Meningkatkan Mutu Peserta Didik dan Lulusan.</li>
+                <li>Meningkatkan Mutu Sarana Pendidikan dan Lingkungan Sekolah.</li>
+                <li>Meningkatkan Sistem Manajemen Sekolah.</li>
+                <li>Meningkatkan Mutu Pelayanan.</li>
+                <li>Memanfaatkan Peluang dan Meminimalisasi Risiko.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Kompetensi</h2>
+            <ol>
+                <li>Kompetensi IMTAQ dan IPTEK.</li>
+                <li>Kompetensi Literasi.</li>
+                <li>Kompetensi Kepemimpinan dan Kewirausahaan.</li>
+                <li>Kompetensi Abad 21 : 4C (Critical Thinking Collaboration, Communication, Creativity).</li>
+                <li>Kompetensi Lingkungan Hidup.</li>
+                <li>Kompetensi Olahraga dan Kesenian.</li>
+                <li>Kompetensi Penguatan Pendidikan Karakter (PPK).</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Program Satuan Pendidikan</h2>
+            <ol>
+                <li>Standar Isi</li>
+                <li>Standar Proses</li>
+                <li>Standar Kompetensi Lulusan</li>
+                <li>Standar Pendidikdan Tenaga Kependidikan</li>
+                <li>Standar Saranadan Prasarana</li>
+                <li>Standar Pengelolaan</li>
+                <li>Standar Pembiayaan</li>
+                <li>Standar Penilaian</li>
+            </ol>
+        </section>
+    </div>
+    <footer>
+        <div class="sosial">
+            <div class="item">
+                <a href="https://www.instagram.com/sman3.bandung/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+                    <span>@sman.bandung</span>
+                </a>
+            </div>
+            <div class="item">
+                <a href="https://youtube.com/@smanegeri3bandung848?si=f0nXBJqdGVSpP0_t" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube">
+                    <span>SMA Negeri 3 Bandung</span>
+                </a>
+            </div>
+        </div>
+        <p>
+            &copy; 2025 <b>Portal Siswa SMAN 3 Bandung</b>
+        </p>
+    </footer>
+    <!-- make ai -->
+    <script>
+        const sections = document.querySelectorAll('section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.2 });
+
+        // hubungkan observer ke tiap section
+        sections.forEach(sec => observer.observe(sec));
+    </script>
+</body>
+</html>
